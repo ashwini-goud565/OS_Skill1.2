@@ -1,13 +1,9 @@
-all:
-	gcc src/fork_demo.c -o bin/fork_demo
-	gcc src/exec_demo.c -o bin/exec_demo
-	gcc src/fork_exec.c -o bin/fork_exec
+CC = gcc
+CFLAGS = -Wall -g
 
-run1:
-	./bin/fork_demo
-run2:
-	./bin/exec_demo
-run3:
-	./bin/fork_exec
+prog2: prog2.c
+	$(CC) $(CFLAGS) -o prog2 prog2.c
+
 clean:
-	rm -f bin/*
+	rm -f prog2
+

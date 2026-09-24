@@ -548,3 +548,66 @@ git init
 git branch -M main
 git remote add origin https://github.com/ashwini-goud565/OS_Skill1.2
 git add .
+nano prog5.c
+gcc prog5.c -o prog5
+./prog5
+nano Makefile
+make
+nano Makefile
+make
+nano Makefile
+make
+git init
+git status
+git add prog5.c ls_grep_pipe.c Makefile
+git commit -m "Producer-Consumer and ls|grep programs"
+git remote set-url origin https://github.com/ashwini-goud565/OS_Skill1.2
+git branch -M main
+git push -u origin main
+git fetch origin
+git merge origin/main
+git add <file>
+git commit
+git pull origin main --allow-unrelated-histories
+git add <file>
+git commit
+git push origin main
+git pull origin main --allow-unrelated-histories --no-rebase
+git add <file>
+git commit
+git add Makefile
+git commit
+git push origin main
+nano Makefile
+make
+git add Makefile
+git commit
+git push origin main
+git rm --cached .config/gh/hosts.yml
+.bash*
+.cache/
+.config/
+*.swp
+*.swo
+*.log
+a.out
+git add .gitignore
+git commit -m "Remove sensitive files and add .gitignore"
+git push origin main
+git reset --soft HEAD~1
+git rm --cached .config/gh/hosts.yml
+echo ".config/" >> .gitignore
+git add .gitignore
+git commit -m "Add .gitignore and remove sensitive files"
+git push origin main --force
+git reset --hard HEAD~2
+git rm --cached .config/gh/hosts.yml
+echo ".config/" >> .gitignore
+git add .gitignore
+git commit -m "Add .gitignore and remove sensitive files"
+pip install git-filter-repo
+git filter-repo --path .config/gh/hosts.yml --invert-paths
+sudo apt install python3-pip
+pip install git-filter-repo
+git filter-repo --path .config/gh/hosts.yml --invert-paths
+git push origin main --force
